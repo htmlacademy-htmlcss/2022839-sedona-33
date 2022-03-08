@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8"> 
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 <body>
   <header class="page-header">
     <nav class="navigation">
       <a class="navigation-logo" href="index.html">
-        <img class="page-header-logo" alt="Лого Седона" src="">
+        <img class="page-header-logo" src="images/logo.png" alt="Logo Sedona Website" width="139" height="70">
       </a>
     <ul class="navigation-list">
       <li class="navigation-item">
@@ -28,11 +29,13 @@
       <li class="navigation-item">
         <a class="navigation-link" href="">
           <span class="visually-hidden">Поиск</span>
+          <img src="images/search.svg" width="42" height="66" alt="Поиск">
         </a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="">
           <span class="visually-hidden">Избранное<sup>12</sup></span>
+          <img src="images/favorites.svg" width="42" height="66" alt="Избранное">
         </a>
       </li>
       <li class="navigation-item">
@@ -43,10 +46,13 @@
   </header>
 <main class="main-inner">
     <header class="inner-header">
+      <img class="index-background" src="images/catalog-background.jpg" width="1200" height="408" alt="Picture of Sedona">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
-          <a class="breadcrumbs-link" href="index.html">Главная</a>
+          <a class="breadcrumbs-link" href="index.html">Главная 
+            <img src="images/breadcrumbs_house.svg" width="12" height="12" alt="">
+          </a>
         </li>
         <li class="breadcrumbs-item">
           <a class="breadcrumbs-link">Гостиницы</a>
@@ -113,45 +119,48 @@
       </select>
       <a href="#" class="button button-selected">
         <span class="visually-hidden">Отобразить карточки</span>
+        <img src="images/mode-tile.svg" width="16" height="14" alt="Mode tiles">
       </a>
       <a href="#" class="#">
-        <span class="visually-hidden">Отобразить подробно каждый</span>
+        <span class="visually-hidden">Отобразить слайдшоу</span>
+        <img src="images/mode-slideshow.svg" width="16" height="14" alt="Mode Slideshow">
       </a>
       <a href="#" class="button">
         <span class="visually-hidden">Отобразить список</span>
+        <img src="images/mode-list.svg" width="16" height="14" alt="Mode List">
       </a>
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="hotel Amara Resort & Spa"> 
+            <img class="hotel-card-image" src="images/amara_picture.jpg" width="300" height="206" alt="hotel Amara Resort & Spa"> 
           </a> 
           <h3 class="hotel-card-title">Amara Resort & Spa</h3>
           <p class="hotel-cards">Гостиница От 4000р</p>
           <a class="button hotel-card-link" href="#">Подробнее</a>
           <button class="button add-favorites" type="button">В Избранное</button>
-          <img src="" alt="****">
+          <img src="images/stars_4.svg" width="91" height="17" alt="****">
           <p class="hotel-cards-rating">Рейтинг: 8,5</p>
         </li>  
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="hotel Desert Quail Inn"> 
+            <img class="hotel-card-image" src="images/desert_hotel_picture.jpg" width="300" height="206" alt="hotel Desert Quail Inn"> 
           </a> 
           <h3 class="hotel-card-title">Desert Quail Inn</h3>
           <p class="hotel-cards">Гостиница От 3000р</p>
           <a class="button hotel-card-link" href="#">Подробнее</a>
           <button class="button add-favorites" type="button">В Избранное</button>
-          <img src="" alt="***">
+          <img src="images/stars_3.svg" width="68" height="17" alt="***">
           <p class="hotel-cards-rating">Рейтинг: 8,9</p>
         </li>
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
-            <img class="hotel-card-image" src="" alt="Villas at Poco Diablo"> 
+            <img class="hotel-card-image" src="images/greentree_hotels_picture.jpg" width="300" height="206" alt="Villas at Poco Diablo"> 
           </a> 
           <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
           <p class="hotel-cards">Гостиница От 3000р</p>
           <a class="button hotel-card-link" href="#">Подробнее</a>
           <button class="button add-favorites-selected" type="button">В Избранное</button>
-          <img src="" alt="**">
+          <img src="images/stars_2.svg" width="43" height="17" alt="**">
           <p class="hotel-cards-rating">Рейтинг: 9,2</p>
         </li>
         <li class="hotel-card">
@@ -162,7 +171,7 @@
           <p class="hotel-cards">Гостиница От 3000р</p>
           <a class="button hotel-card-link" href="#">Подробнее</a>
           <button class="button add-favorites" type="button">В Избранное</button>
-          <img src="" alt="**">
+          <img src="images/stars_2.svg" width="43" height="17" alt="**">
           <p class="hotel-cards-rating">Рейтинг: 9,2</p>
         </li>
       </ul>
@@ -193,144 +202,61 @@
           </a>
         </li>
         </ul>
-        <button class="button search-show-more" type="button">Загрузить ещё</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">...</span>
-            </a>
-            <ul class="hotel-list">
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="" alt="hotel Amara Resort & Spa"> 
-                </a> 
-                <h3 class="hotel-card-title">Amara Resort & Spa</h3>
-                <p class="hotel-cards">Гостиница От 4000р</p>
-                <a class="button hotel-card-link" href="#">Подробнее</a>
-                <button class="button add-favorites" type="button">В Избранное</button>
-                <img src="" alt="****">
-                <p class="hotel-cards-rating">Рейтинг: 8,5</p>
-              </li>  
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="" alt="hotel Desert Quail Inn"> 
-                </a> 
-                <h3 class="hotel-card-title">Desert Quail Inn</h3>
-                <p class="hotel-cards">Гостиница От 3000р</p>
-                <a class="button hotel-card-link" href="#">Подробнее</a>
-                <button class="button add-favorites" type="button">В Избранное</button>
-                <img src="" alt="***">
-                <p class="hotel-cards-rating">Рейтинг: 8,9</p>
-              </li>
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="" alt="Villas at Poco Diablo"> 
-                </a> 
-                <h3 class="hotel-card-title">Villas at Poco Diablo</h3>
-                <p class="hotel-cards">Гостиница От 3000р</p>
-                <a class="button hotel-card-link" href="#">Подробнее</a>
-                <button class="button add-favorites-selected" type="button">В Избранное</button>
-                <img src="" alt="**">
-                <p class="hotel-cards-rating">Рейтинг: 9,2</p>
-              </li>
-              <li class="hotel-card">
-                <a class="hotel-card-link" href="#">
-                  <img class="hotel-card-image" src="" alt="hotel GreenTree Inn"> 
-                </a> 
-                <h3 class="hotel-card-title">GreenTree Inn</h3>
-                <p class="hotel-cards">Гостиница От 3000р</p>
-                <a class="button hotel-card-link" href="#">Подробнее</a>
-                <button class="button add-favorites" type="button">В Избранное</button>
-                <img src="" alt="**">
-                <p class="hotel-cards-rating">Рейтинг: 9,2</p>
-              </li>
-            </ul>
-            <button class="button search-show-more" type="button">Загрузить ещё</button>
-            <ul class="pagination">
-              <li class="pagination-item">
-                <a class="pagination-link pagination-current">1</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">2</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">3</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">4</a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link pagination-next" href="#">
-                  <span class="visually-hidden">...</span>
-                </a>
-              </li>
-              <li class="pagination-item">
-                <a class="pagination-link" href="#">10</a>
-              </li>
-            </ul>
-            <p>Гостиниц на странице:</p>
-            <select class="select-control" aria-label="Гостиниц на странице:">
-              <option value="4">4</option>
-              <option value="6">6</option>
-              <option value="9">9</option>
-             </select>
-     </section>
-    </main>
-    <footer class="page-footer">
-        <section class="newsletter">
-         <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
-         <p>Только полезная информация и никакого спама,
-           честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-           <label for="newsletter-email">Email</label>
-           <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-           <button class="button newsletter-button" type="submit">
-             <span class="visually-hidden">Подписаться</span>
-           </button>
-          </form>
-        </section>
-        <section class="footer-social">
-         <h2 class="visually-hidden">Social Media</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-             <a class="button" href=" https://twitter.com/htmlacademy_ru">
-               <span class="visually-hidden">Twitter</span>
-             </a>
-           </li>
-           <li class="footer-social-item">
-             <a class="button" href="https://www.facebook.com/htmlacademy">
-               <span class="visually-hidden">Facebook</span>
-             </a>
-           </li>
-           <li class="footer-social-item">
-             <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
-               <span class="visually-hidden">YouTube</span>
-             </a>
-           </li>
-         </ul>
-        <section>
-         <h2 class="visually-hidden">Телефон</h2>
-         <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12
-         </a>
-        </section>
-        <section>
-         <h2 class="visually-hidden">Логотип академии</h2>
-         <a class="footer-logo" href="https://htmlacademy.ru">
-           <img class="page-fotter-logo" alt="logo_htmlacademy" src="">
-         </a>
-        </section>
-       </footer> 
-    </body>
+        <p>Гостиниц на странице:</p>
+          <select class="select-control" aria-label="Гостиниц на странице:">
+            <option value="4">4</option>
+            <option value="6">6</option>
+            <option value="9">9</option>
+          </select>
+    </section>
+</main>
+<footer class="page-footer">
+  <section class="newsletter">
+    <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
+    <p>Только полезная информация и никакого спама,
+      честное бойскаутское!</p>
+    <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+      <label for="newsletter-email">Email</label>
+        <input class="field" placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+    </form>
+  </section>
+  <section class="footer-social">
+    <h2 class="visually-hidden">Социальные Сети</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href=" https://twitter.com/htmlacademy_ru">
+            <span class="visually-hidden">Twitter</span>
+            <img src="images/twitter_icon.svg" width="18" height="15" alt="Twitter icon">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.facebook.com/htmlacademy">
+            <span class="visually-hidden">Facebook</span>
+            <img src="images/facebook_icon.svg" width="10" height="18" alt="Facebook icon">
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <span class="visually-hidden">YouTube</span>
+            <img src="images/youtube_icon.svg" width="20" height="16" alt="YouTube icon">
+          </a>
+        </li>
+      </ul>
+  </section>
+  <section>
+    <h2 class="visually-hidden">Телефон</h2>
+    <a class="footer-contacts-address-phone" href="tel:+78128121212"> +7 (812) 812-12-12
+    </a>
+  </section>
+  <section>
+    <h2 class="visually-hidden">Логотип академии</h2>
+      <a class="footer-logo" href="https://htmlacademy.ru">
+        <img class="page-fotter-logo" src="images/logo_htmlacademy.svg" width="115" height="34" alt="logo_htmlacademy" >
+      </a>
+  </section>
+</footer> 
+</body>
 </html>
