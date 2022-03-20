@@ -34,10 +34,12 @@ body {
 .page-container {
     width: 1200px;
     margin: 0 auto;
+  }
+
+.index-banner {
     background-image: url(../images/index-background.jpg);
     background-size: 1200px;
-    background-repeat: no-repeat; 
-  }
+}
 
 /* Index Header */
 
@@ -47,8 +49,14 @@ body {
 
 .navigation {
     display: flex;
-    width: 1060px;
+    width: 1200px;
     margin: 0 auto;
+}
+
+.page-header-logo {
+    width: 139px;
+    margin-left: 70px;
+    margin-right: 30px;
 }
 
 .navigation-list{
@@ -185,8 +193,8 @@ body {
     background-image: url(../images/footer_background.jpg);
     background-color: white;
 }
+
 .subscribe-catalog {
-    background-size: 100% auto;
     background-color: white;
     text-align: center;
 }
@@ -221,13 +229,15 @@ body {
 
 /* Catalog */
 .main-inner {
-    color: rgb(51, 51, 51);
-    background-color: white;
-    background-image: url(../images/catalog-background.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat; 
 }
+
+.catalog {
+    background-image: url(../images/catalog-background.jpg);
+    background-repeat: no-repeat;
+}
+
 .inner-header {
+    color: rgb(51, 51, 51); 
     color: white;
 }
 
@@ -249,15 +259,18 @@ body {
     text-decoration: none;
     color: inherit;
 }
-.header-catalog-products {
+
+.catalog-products{
+    display: flex;
+    flex-direction: row;
     color: white;
 }
+
 .catalog-filter-list, .hotel-list{
     list-style-type: none;
-    text-decoration: none;
-   
-    
+    text-decoration: none;    
 }
+
 .catalog-filter-title{
     font-size: 20px;
     font-weight: 700;
@@ -274,6 +287,18 @@ body {
 }
 
 /* Hotels cards */
+
+.sorting-container {
+    display: flex;
+    width: 1057px;
+    margin-left: 71px ;
+}
+
+.hotels-cards {
+    margin: 0 auto;
+    display: flex;
+    width: 1057px;
+}
 
 .hotel-card-title {
     font-size: 24px;
