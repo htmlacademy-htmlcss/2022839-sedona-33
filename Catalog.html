@@ -123,20 +123,21 @@
             <option value="popular">Сначала популярные</option>
           </select>
         </div>
-        <a href="#" class="button button-selected">
-          <span class="visually-hidden">Отобразить карточки</span>
+        <div class="sorting-options-buttons">
+        <a href="#" class="button-sorting button-selected">
+          <span class="visually-hidden" hidden>Отобразить карточки</span>
           <img src="images/mode-tile.svg" width="16" height="14" alt="Mode tiles">
         </a>
-        <a href="#" class="#">
-          <span class="visually-hidden">Отобразить слайдшоу</span>
+        <a href="#" class="button-sorting">
+          <span class="visually-hidden" hidden>Отобразить слайдшоу</span>
           <img src="images/mode-slideshow.svg" width="16" height="14" alt="Mode Slideshow">
         </a>
-        <a href="#" class="button">
-          <span class="visually-hidden">Отобразить список</span>
+        <a href="#" class="button-sorting">
+          <span class="visually-hidden" hidden>Отобразить список</span>
           <img src="images/mode-list.svg" width="16" height="14" alt="Mode List">
         </a>
       </div>
-      <div class="hotels-cards">
+      </div>
         <ul class="hotel-list">
           <li class="hotel-card">
             <a class="hotel-card-link" href="#">
@@ -183,8 +184,10 @@
             <p class="hotel-cards-rating">Рейтинг: 9,2</p>
           </li>
         </ul>
+        <div class="catalog-search-more-button">
+        <button class="button search-show-more" type="button">Загрузить ещё</button>
+        </div>
         <div class="pagination-block">
-          <button class="button search-show-more" type="button">Загрузить ещё</button>
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -218,7 +221,6 @@
                 <option value="9">9</option>
               </select>
         </div>
-      </div>
     </div>
      <section class="subscribe-catalog">
       <h2 class="page-footer-title">Подпишитесь на рассылку</h2>
