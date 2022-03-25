@@ -611,6 +611,17 @@ body {
     padding: 16px;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 4px;
+    outline: 2px solid rgb(229, 229, 229);
+}
+
+.button-sorting:hover, .button-sorting:focus {
+    outline: 2px solid rgb(104, 162, 202);
+}
+
+.button-selected {
+    outline: 2px solid black;
+
 }
 
 .button-sorting:nth-last-child(3) {
@@ -623,11 +634,22 @@ body {
 
 .select-control {
     padding: 12px 127px 13px 19px;
-    border-color: rgb(230, 230, 230);
+    border: 2px solid #E6E6E6;
+    box-sizing: border-box;
+    border-radius: 4px;
     color: rgb(51, 51, 51);
     font-family: PT Sans, sans-serif;
     font-size: 18px;
 }
+
+.select-control:hover, .select-control:focus  {
+    border-color: rgb(131, 179, 211);
+}
+
+.select-control:active {
+    border-color: rgb(230, 230, 230);
+}
+
 .select{
     margin-left: auto;
     margin-right: 81px;
